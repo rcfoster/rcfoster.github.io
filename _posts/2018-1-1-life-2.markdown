@@ -1,0 +1,8 @@
+---
+layout: default
+img: hiking.png
+category: life
+title: Hobbies and Activities
+description: |
+---
+In my free time, I enjoy playing guitar, reading about history, and hiking in the beautiful New Mexico area. It's fun to visit new places and learn new things!
