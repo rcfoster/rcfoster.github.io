@@ -1,0 +1,395 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Simple LaTeX CV Template %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% NOTE: If you find that it says                                     %%
+%%                                                                    %%
+%%                           1 of ??                                  %%
+%%                                                                    %%
+%% at the bottom of your first page, this means that the AUX file     %%
+%% was not available when you ran LaTeX on this source. Simply RERUN  %%
+%% LaTeX to get the ``??'' replaced with the number of the last page  %%
+%% of the document. The AUX file will be generated on the first run   %%
+%% of LaTeX and used on the second run to fill in all of the          %%
+%% references.                                                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't like 10pt? Try 11pt or 12pt
+\documentclass[11pt]{article}
+
+% This is a helpful package that puts math inside length specifications
+\usepackage{calc}
+\usepackage{etaremune}
+% Simpler bibsection for CV sections
+% (thanks to natbib for inspiration)
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newenvironment{bibsection}
+    {\minipage[t]{\linewidth}\list{}{%
+        \setlength{\leftmargin}{\bibhang}%
+        \setlength{\itemindent}{-\leftmargin}%
+        \setlength{\itemsep}{\bibsep}%
+        \setlength{\parsep}{\z@}%
+        }}
+    {\endlist\endminipage}
+\makeatother
+
+% Layout: Puts the section titles on left side of page
+\reversemarginpar
+
+%
+%         PAPER SIZE, PAGE NUMBER, AND DOCUMENT LAYOUT NOTES:
+%
+% The next \usepackage line changes the layout for CV style section
+% headings as marginal notes. It also sets up the paper size as either
+% letter or A4. By default, letter was used. If A4 paper is desired,
+% comment out the letterpaper lines and uncomment the a4paper lines.
+%
+% As you can see, the margin widths and section title widths can be
+% easily adjusted.
+%
+% ALSO: Notice that the includefoot option can be commented OUT in order
+% to put the PAGE NUMBER *IN* the bottom margin. This will make the
+% effective text area larger.
+%
+% IF YOU WISH TO REMOVE THE ``of LASTPAGE'' next to each page number,
+% see the note about the +LP and -LP lines below. Comment out the +LP
+% and uncomment the -LP.
+%
+% IF YOU WISH TO REMOVE PAGE NUMBERS, be sure that the includefoot line
+% is uncommented and ALSO uncomment the \pagestyle{empty} a few lines
+% below.
+%
+
+%% Use these lines for letter-sized paper
+\usepackage[paper=letterpaper,
+            %includefoot, % Uncomment to put page number above margin
+            marginparwidth=1.2in,     % Length of section titles
+            marginparsep=.05in,       % Space between titles and text
+            margin=1in,               % 1 inch margins
+            includemp]{geometry}
+
+%% Use these lines for A4-sized paper
+%\usepackage[paper=a4paper,
+%            %includefoot, % Uncomment to put page number above margin
+%            marginparwidth=30.5mm,    % Length of section titles
+%            marginparsep=1.5mm,       % Space between titles and text
+%            margin=25mm,              % 25mm margins
+%            includemp]{geometry}
+
+%% More layout: Get rid of indenting throughout entire document
+\setlength{\parindent}{0in}
+
+%% This gives us fun enumeration environments. compactitem will be nice.
+\usepackage{paralist}
+
+%% Reference the last page in the page number
+%
+% NOTE: comment the +LP line and uncomment the -LP line to have page
+%       numbers without the ``of ##'' last page reference)
+%
+% NOTE: uncomment the \pagestyle{empty} line to get rid of all page
+%       numbers (make sure includefoot is commented out above)
+%
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+%\pagestyle{empty}      % Uncomment this to get rid of page numbers
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift}%
+       \parbox{4in}{\, \hfill %
+                    \arabic{page} of \protect\pageref*{LastPage} % +LP
+%                    \arabic{page}                               % -LP
+                    \hfill \,}}
+
+% Finally, give us PDF bookmarks
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The title (name) with a horizontal rule under it
+%
+% Usage: \makeheading{name}
+%
+% Place at top of document. It should be the first thing.
+\newcommand{\makeheading}[1]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+                {\large \bfseries #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+
+% The section headings
+%
+% Usage: \section{section name}
+%
+% Follow this section IMMEDIATELY with the first line of the section
+% text. Do not put whitespace in between. That is, do this:
+%
+%       \section{My Information}
+%       Here is my information.
+%
+% and NOT this:
+%
+%       \section{My Information}
+%
+%       Here is my information.
+%
+% Otherwise the top of the section header will not line up with the top
+% of the section. Of course, using a single comment character (%) on
+% empty lines allows for the function of the first example with the
+% readability of the second example.
+\renewcommand{\section}[2]%
+        {\pagebreak[2]\vspace{1.3\baselineskip}%
+         \phantomsection\addcontentsline{toc}{section}{#1}%
+         \hspace{0in}%
+         \marginpar{
+         \raggedright \scshape #1}#2}
+
+% An itemize-style list with lots of space between items
+\newenvironment{outerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1]}{\end{itemize}%
+         \vspace{-.6\baselineskip}}
+
+% An environment IDENTICAL to outerlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{lonelist}[1][\enskip\textbullet]%
+        {\vspace{-\baselineskip}\begin{list}{#1}{%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+
+% An itemize-style list with little space between items
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{compactitem}[#1]}{\end{compactitem}}
+
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[2]}
+
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\makeheading{Robert Foster}
+
+\section{Contact Information}
+%
+% NOTE: Mind where the & separators and \\ breaks are in the following
+%       table.
+%
+% ALSO: \rcollength is the width of the right column of the table
+%       (adjust it to your liking; default is 1.85in).
+%
+\newlength{\rcollength}\setlength{\rcollength}{1.85in}%
+%
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
+%\href{http://www.ece.osu.edu/}%
+     {Office 03-30-W135H} & \textit{Phone:} (505) 665-4986\\
+Los Alamos National Laboratory &  \textit{E-mail:}
+\href{mailto:rcfoster@lanl.gov}{rcfoster@lanl.gov}\\
+               & \\
+          & \\
+   & %\textit{WWW:}
+\end{tabular}
+
+
+\section{Research Interests}
+%
+Applications of statistical methods, Bayesian and empirical Bayesian methods, bootstrap and other Monte Carlo methodologies, statistical programming, uncertainty quantification, and statistical methods as applied to the sciences.
+
+\section{Education}
+%
+\textbf{Ph.D. in Statistics}
+
+\begin{outerlist}
+
+\item[] \textbf{Iowa State University}, Ames, IA, October 2016
+             \begin{innerlist}
+             	\item Thesis title: Topics in Empirical Bayesian Analysis
+		\item Adviser: Mark S. Kaiser
+		\item 3.65 GPA
+		\item The primary focus of my dissertation was on comparing and contrasting the ways that the uncertainty introduced from double use  of the data (once for estimation of the hyperparameters, once in the resulting Bayesian analysis) has been accounted for, and incorporating many of these methods into a consistent framework. A new method was proposed for deriving empirical Bayesian intervals for means of natural exponential families with quadratic variance functions based on a modified version of intervals previously described by Carl Morris.\\
+             \end{innerlist}
+   %     \begin{innerlist}
+   %        \item Thesis Topic: \emph{Dynamics of Distributed Cooperative
+   %         Agents}
+   %       \item Adviser:
+   %            \href{http://www.ece.osu.edu/~passino/}
+   %                {Professor Kevin M.~Passino}
+   %    \item Area of Study: Control Engineering
+   %    \end{innerlist}
+
+\end{outerlist}
+
+\textbf{M.S. in Statistics}
+\begin{outerlist}
+	\item[] \textbf{Iowa State University}, Ames, IA, December 2010	
+	\begin{innerlist}
+		\item Adviser: Alyson Wilson
+		\item 3.65 GPA\\
+         \end{innerlist}
+\end{outerlist}
+
+\textbf{B.S. in Mathematics and Statistics}
+	\begin{outerlist}
+		\item[]  \textbf{Oklahoma State University}, Stillwater, OK,  May 2007
+        		\begin{innerlist}
+       			\item Summa cum laude
+        			\item Minor in Computer Science
+                \item 3.948 GPA\\
+        		\end{innerlist}
+
+\end{outerlist}
+
+\section{Research Experience}
+
+\textbf{Los Alamos National Laboratory}, Los Alamos, NM
+	\begin{outerlist}
+		 \item[] Postdoctoral Researcher, Oct. 2016 - Present
+		 \begin{innerlist}
+		 	\item Research topics include Beyond Moore’s Law sources of uncertainty and the statistical properties of resulting errors from propagation of BML sources of uncertainty, and simulation of microstructures from samples of additively manufactured materials.
+		\end{innerlist}
+        \item[] CCS-6, Statistical Sciences group 
+        \begin{innerlist}
+             \item Department of Statistics
+        \end{innerlist}
+	\end{outerlist}
+\textbf{Iowa State University}, Ames, IA
+	\begin{outerlist}
+		 \item[] Research Assistant, 2007-2010
+		 \begin{innerlist}
+		 	\item Department of Statistics
+			\item Worked with various departments and groups at Iowa State University, including animal science and consulting with the agriculture experiment station (AES).
+		\end{innerlist}
+       % \item[] Instructor, 2010-2016
+        %\begin{innerlist}
+            % \item Department of Statistics
+        %\end{innerlist}
+	\end{outerlist}
+
+%\section{Awards}
+%\textbf{Professional Awards}
+%\begin{innerlist}
+%	\item None
+%\end{innerlist}
+%\textbf{Graduate Student Awards}
+%\begin{innerlist}
+%\item None
+%\end{innerlist}
+
+%\blankline
+
+% \section{Research Experience}
+
+\section{Teaching Experience}
+\textbf{Iowa State University}, Ames, IA USA
+\begin{outerlist}
+
+\item[] \textit{Instructor}%
+    \hfill \textbf{August 2010 to May 2016}
+
+      \begin{innerlist}
+	\item Instructor for Principles of Statistics, Fall~2010, Spring~2011, Summer~2011, Fall~2011, Spring~2012, Summer~2012
+        \item Instructor for Probability and Statistics for Computer Science, Fall~2012, Spring~2013, Fall~2013, Spring~2014
+        \item Instructor for Engineering Statistics, Fall~2014
+        \item Instructor for Probability and Statistical Inference for Engineers, Spring~2015, Spring~2016
+	\end{innerlist}
+\end{outerlist}
+
+%\section{Books Authored}
+%\begin{bibsection}
+%	\item None
+%\end{bibsection}
+
+%\section{Publications}
+%\textit{Publications in Statistical Journals}
+%\begin{etaremune}
+%	\item None
+%\end{etaremune}
+
+%\section{Book Reviews}
+%\begin{bibsection}
+%	\item None
+%\end{bibsection}
+
+%\section{Publications \\ in Preparation}
+%\begin{bibsection}
+%	\item \textbf{Foster, R.}, and Kaiser, M., ``On the Length of Empirical Bayesian Intervals in the Beta-Binomial Model,'' \emph{Statistical Science,} (In Preparation)
+%	%\item \textbf{Foster, R.},  ``Empirical Bayesian Estimation with Correlation between Success and Sample Size.'' \emph{Statistical Modelling} (Preliminary) 	
+%	\item \textbf{Foster, R.}  ``Estimating Team Win Percentage Using a Zero-Inflated Geometric Distribution for Runs Scored and Runs Allowed per Inning,'' \emph{Journal of Quantitative Analysis in Sports} (In Preparation)\\
+%\end{bibsection}
+
+\section{Technical Reports}
+\begin{bibsection}
+	\item Abendroth, Lori; Marlay, Stephanie; Myers, Anthony J.W.; Elmore, Roger W.; and \textbf{Foster, Robert C.}, "\emph{Regional Corn Planting Date Recommendations for Iowa}" (2010). Iowa State Research Farm Progress Reports. 410.
+\end{bibsection}
+
+\section{Invited Talks}
+\begin{bibsection}
+	\item \emph{Towards Recreation of Microstructure in Additively Manufactured Materials}, International Conference on Plasticity, Jan. 2018; Albuquerque ASA spring meeting, Apr. 2018
+\end{bibsection}
+
+%\section{Conference Proceedings}
+%
+%\begin{bibsection}
+%	\item None
+%\end{bibsection}
+% \section{Professional Experience}
+%
+
+%\section{Developed Software}
+%\begin{bibsection}
+%	\item None
+%\end{bibsection}
+
+%\section{Professional Services}
+%\textbf{Offices Held}
+%\begin{innerlist}
+%	\item None
+%\end{innerlist}
+
+%\textbf{Journals Refereed}
+%\begin{innerlist}
+%\item None
+%\end{innerlist}
+
+\section{Professional Membership}
+\begin{innerlist}
+	\item American Statistical Association
+\end{innerlist}
+
+\section{Computer Expertise}
+%
+Statistical Software: R, JMP, SAS
+
+Programming Languages: C, Java
+
+Applications:  \TeX{}, \LaTeX{}, B\textsc{ib}\TeX{}, Microsoft Office
+
+Operating Systems: Microsoft Windows, macOS
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
