@@ -1,8 +1,8 @@
 ---
 layout: default
-img: trinity.jpg
+img: posteriors.jpeg
 category: experience
-title: Current Work
+title: Education
 description: |
 ---
-My current research as a postdoc at Los Alamos National Laboratory involves uncertainty quantification and analysis of microstructures of additively manufactured materials. I've also conducted research into applications of quantum computing in statistics.
+I completed a PhD in statistics in October 2016 at Iowa State University. The main topic was the history of empirical Bayesian analysis, and the ways that people have historically attempted to correct for the uncertainty caused by double use of the data - once in estimating prior parameters, and once in the actual Bayesian analysis itself.

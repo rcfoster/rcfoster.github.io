@@ -23,15 +23,17 @@ permalink: pretty
 # ----------------------- #
 
 social:
-  - icon: CV
-    title: CV
-    url: https://rcfoster.github.io/cv/CV.pdf
+
   - icon: Email
     title: Email
-    url: mailto:rcfoster@gmail.com	
-  - icon: github
-    title: github
-    url: https://github.com/rcfoster
+    url: mailto:rcfoster@gmail.com
   - icon: linkedin
     title: linkedin
     url: https://www.linkedin.com/in/robert-foster-07b645169/	
+  - icon: CV
+    title: CV
+    url: https://rcfoster.github.io/cv/CV.pdf	
+  - icon: github
+    title: github
+    url: https://github.com/rcfoster
+
