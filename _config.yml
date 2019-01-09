@@ -3,11 +3,11 @@
 # ----------------------- #
 
 url: http://robertcfoster.com
-title: 'Empirically Bayesian'
+title: 'Top'
 email: 'rcfoster@gmail.com'
 author: Robert C. Foster
 description: 'The personal website of statistician Robert C. Foster'
-copyright: 'Copyright &copy; 2018 Robert C. Foster. All Rights Reserved.'
+copyright: 'Copyright &copy; 2019 Robert C. Foster. All Rights Reserved.'
 credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
 
 # ----------------------- #
@@ -23,15 +23,15 @@ permalink: pretty
 # ----------------------- #
 
 social:
-  - icon: folder
+  - icon: CV
     title: CV
     url: https://rcfoster.github.io/cv/CV.pdf
-  - icon: envelope
+  - icon: Email
     title: Email
-    url: mailto:rcfoster@gmail.com		
+    url: mailto:rcfoster@gmail.com	
   - icon: github
     title: github
     url: https://github.com/rcfoster
   - icon: linkedin
     title: linkedin
-    url: https://www.linkedin.com/in/robert-foster-07b645169/
+    url: https://www.linkedin.com/in/robert-foster-07b645169/	

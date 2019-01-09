@@ -1,8 +1,8 @@
 ---
 layout: default
-img: hiking.png
+img: baseball.jpg
 category: life
-title: Hobbies and Activities
+title: Baseball
 description: |
 ---
-In my free time, I enjoy playing guitar, reading about history, and hiking in the beautiful New Mexico area. It's fun to visit new places and learn new things!
+I enjoy traveling to watch baseball games. In grad school, I briefly had a baseball statistics blog that I wrote (in combination with working on my thesis). [Check it out!](http://www.probabilaball.com) The main topic I wrote on was the underlying theory of stabilization points.
