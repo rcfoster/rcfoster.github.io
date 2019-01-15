@@ -2,7 +2,7 @@
 layout: default
 img: baseball.jpg
 category: life
-title: Baseball
+title: Projects
 description: |
 ---
-I enjoy traveling to watch baseball games. In grad school, I briefly had a baseball statistics blog that I wrote (in combination with working on my thesis). [Check it out!](http://www.probabilaball.com) The main topic I wrote on was the underlying theory of stabilization points.
+I enjoy traveling to watch baseball games. In grad school, I briefly had a baseball statistics blog that I wrote (partly for fun, partly as an application to work through problems that ended up in my thesis). [Check it out!](http://www.probabilaball.com) The main topic I wrote on was the underlying theory of stabilization points.

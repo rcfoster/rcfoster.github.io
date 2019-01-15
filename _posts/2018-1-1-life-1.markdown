@@ -2,7 +2,12 @@
 layout: default
 img: hiking.png
 category: life
-title: Hobbies and Activities
-description: |
+title: Hobbies
+description: Overlooking Alamo canyon in Bandelier National Monument.
 ---
-In my free time, I enjoy playing the guitar, reading history books, and exploring new places in the beautiful New Mexico area. 
+
+In my free time, I enjoy exploring the beautiful New Mexico area, visiting new cities, and hiking the trails around Los Alamos. 
+
+I've been playing the guitar since I was 20 years old. While in graduate school, I took lessons and performed in local musical productions. I enjoy playing mostly rock and blues.
+
+I also enjoy reading, with my primary interest in history (including the history of statistics). You can see what I'm currently reading [on my goodreads account](https://www.goodreads.com/rcfoster).
