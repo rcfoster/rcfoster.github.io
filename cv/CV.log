@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.4)  11 JAN 2019 22:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.4)  18 MAR 2019 22:26
 entering extended mode
-**./CV.tex
-(CV.tex
+**C:/Users/rcfos/Documents/GitHub/rcfoster.github.io/cv/CV.tex
+(C:/Users/rcfos/Documents/GitHub/rcfoster.github.io/cv/CV.tex
 LaTeX2e <2018-04-01> patch level 5
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -232,7 +232,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package hyperref Info: Option `colorlinks' set `true' on input line 119.
 Package hyperref Info: Option `breaklinks' set `true' on input line 119.
 
-No file CV.aux.
+(C:/Users/rcfos/Documents/GitHub/rcfoster.github.io/cv\CV.aux)
 \openout1 = `CV.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 193.
@@ -249,6 +249,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 193.
 LaTeX Font Info:    ... okay on input line 193.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 193.
 LaTeX Font Info:    ... okay on input line 193.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -313,6 +314,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 193.
 LaTeX Info: Redefining \pageref on input line 193.
 LaTeX Info: Redefining \nameref on input line 193.
+
+(C:/Users/rcfos/Documents/GitHub/rcfoster.github.io/cv\CV.out)
+(C:/Users/rcfos/Documents/GitHub/rcfoster.github.io/cv\CV.out)
 \@outlinefile=\write3
 \openout3 = `CV.out'.
 
@@ -324,7 +328,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 207.
 
-Overfull \hbox (18.0pt too wide) in paragraph at lines 205--216
+Overfull \hbox (18.0pt too wide) in paragraph at lines 205--215
 [] [] 
  []
 
@@ -341,46 +345,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 233--234
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.256 
+      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--262
-
- []
-
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 273.
 
 [1
 
 {C:/Users/rcfos/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (5.5971pt too wide) in paragraph at lines 314--315
-[]\OT1/cmr/m/n/10.95 Instructor for Prin-ci-ples of Statis-tics, Fall 2010, Spr
-ing 2011, Sum-mer 2011,
+Overfull \hbox (11.68045pt too wide) in paragraph at lines 318--319
+[]\OT1/cmr/m/n/10.95 Probability and Sta-tis-ti-cal In-fer-ence for En-gi-neers
+: Spring 2015, Spring 2016 
  []
 
 
-Overfull \hbox (17.88547pt too wide) in paragraph at lines 317--318
-[]\OT1/cmr/m/n/10.95 Instructor for Prob-a-bil-ity and Sta-tis-ti-cal In-fer-en
-ce for En-gi-neers, Spring 2015,
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 339.
 
-
-Package lastpage Warning: Rerun to get the references right on input line 393.
-
-
+[2] 
 AED: lastpage setting LastPage
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 393.
-
-[2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 393.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 393.
+[3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 395.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 395.
  (CV.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 393.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 393.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 395.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 395.
 
 
 Package rerunfilecheck Warning: File `CV.out' has changed.
@@ -388,24 +386,21 @@ Package rerunfilecheck Warning: File `CV.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `CV.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  88618C5EDCCCA3B8DC1A1FC44797279D;488.
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Before: 88618C5EDCCCA3B8DC1A1FC44797279D;488
+(rerunfilecheck)             After:  86DB325708E38B4FD08D1A7E48D42264;558.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 393.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 395.
  ) 
 Here is how much of TeX's memory you used:
- 5832 strings out of 492973
- 86377 string characters out of 3135933
- 188204 words of memory out of 3000000
- 9659 multiletter control sequences out of 15000+200000
+ 5853 strings out of 492973
+ 87019 string characters out of 3135933
+ 188333 words of memory out of 3000000
+ 9670 multiletter control sequences out of 15000+200000
  7939 words of font info for 28 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,13n,68p,579b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,14n,68p,631b,320s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiK
@@ -413,9 +408,9 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmti10.pfb>
-Output written on CV.pdf (2 pages, 101028 bytes).
+Output written on CV.pdf (3 pages, 107052 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 PDF objects out of 1000 (max. 8388607)
+ 14 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
