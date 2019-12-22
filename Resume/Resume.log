@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2019.4.7)  30 SEP 2019 20:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2019.4.7)  21 DEC 2019 21:27
 entering extended mode
 **./Resume.tex
 (Resume.tex
@@ -232,7 +232,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package hyperref Info: Option `colorlinks' set `true' on input line 119.
 Package hyperref Info: Option `breaklinks' set `true' on input line 119.
 
-No file Resume.aux.
+(Resume.aux)
 \openout1 = `Resume.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 193.
@@ -249,6 +249,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 193.
 LaTeX Font Info:    ... okay on input line 193.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 193.
 LaTeX Font Info:    ... okay on input line 193.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -313,12 +314,11 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 193.
 LaTeX Info: Redefining \pageref on input line 193.
 LaTeX Info: Redefining \nameref on input line 193.
+
+(Resume.out) (Resume.out)
 \@outlinefile=\write3
 \openout3 = `Resume.out'.
 
-
-! I can't write on file `Resume.pdf'.
-Please type another file name for output: 
 \rcollength=\skip63
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 207.
@@ -339,13 +339,10 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 229.
 
-Overfull \hbox (11.68045pt too wide) in paragraph at lines 249--250
+Overfull \hbox (11.68045pt too wide) in paragraph at lines 249--251
 []\OT1/cmr/m/n/10.95 Probability and Sta-tis-ti-cal In-fer-ence for En-gi-neers
 : Spring 2015, Spring 2016 
  []
-
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 278.
 
 [1
 
@@ -354,46 +351,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
  []
 
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 379.
-
-[2]
-
-Package lastpage Warning: Rerun to get the references right on input line 433.
-
-
+[2] 
 AED: lastpage setting LastPage
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 433.
-
 [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 433.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 433.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 443.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 443.
  (Resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 433.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 433.
-
-
-Package rerunfilecheck Warning: File `Resume.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Resume.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  14318E5D6D0B3CAD371A06C73D97D8EA;580.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 433.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 443.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 443.
+Package rerunfilecheck Info: File `Resume.out' has not changed.
+(rerunfilecheck)             Checksum: 14318E5D6D0B3CAD371A06C73D97D8EA;580.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 443.
  ) 
 Here is how much of TeX's memory you used:
- 5835 strings out of 492973
- 86443 string characters out of 3135933
- 189204 words of memory out of 3000000
- 9659 multiletter control sequences out of 15000+200000
+ 5853 strings out of 492973
+ 86819 string characters out of 3135933
+ 188333 words of memory out of 3000000
+ 9671 multiletter control sequences out of 15000+200000
  7939 words of font info for 28 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,14n,68p,643b,501s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -404,9 +378,9 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmti10.pfb>
-Output written on .pdf (3 pages, 109476 bytes).
+Output written on Resume.pdf (3 pages, 112885 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
+ 110 PDF objects out of 1000 (max. 8388607)
  15 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
