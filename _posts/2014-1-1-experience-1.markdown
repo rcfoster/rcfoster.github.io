@@ -1,8 +1,8 @@
 ---
 layout: default
-img: trinity.jpg
+img: Submarine.jpg
 category: experience
-title: Postdoctoral Work
+title: Work
 description: |
 ---
-My current research as a postdoc at Los Alamos National Laboratory involves uncertainty quantification of computational error in stochastic emulators and analysis of microstructures of additively manufactured materials. I've also conducted research into applications of quantum computing in statistics.
+I work as a statistician for Bettis atomic power laboratory, providing the Navy with statistical support for its reactors. In my free time I've done some research in psychometrics. I've also conducted research into applications of quantum computing in statistics.
