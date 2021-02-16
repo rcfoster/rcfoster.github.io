@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.7.10)  18 JAN 2021 22:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.7.10)  16 FEB 2021 09:02
 entering extended mode
 **./main.tex
 (main.tex
@@ -919,12 +919,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1931--1932
 [33] (main.aux) ) 
 Here is how much of TeX's memory you used:
  17395 strings out of 480756
- 323969 string characters out of 2903877
- 733617 words of memory out of 3000000
+ 324427 string characters out of 2903877
+ 733619 words of memory out of 3000000
  33071 multiletter control sequences out of 15000+200000
  542334 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,14n,60p,3215b,373s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,14n,60p,3221b,373s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 bx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/P
@@ -941,7 +941,7 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (33 pages, 2249123 bytes).
+Output written on main.pdf (33 pages, 2249184 bytes).
 PDF statistics:
  183 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
