@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.7.10)  19 FEB 2021 21:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.7.10)  24 JUL 2021 11:25
 entering extended mode
 **./CV.tex
 (CV.tex
@@ -357,7 +357,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 267--268
 {C:/Users/rcfos/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 ]
-Overfull \hbox (11.61832pt too wide) in paragraph at lines 404--405
+Overfull \hbox (11.61832pt too wide) in paragraph at lines 405--406
 []\OT1/cmr/m/n/10.95 Probability and Sta-tis-ti-cal In-fer-ence for En-gi-neers
 : Spring 2015, Spring 2016 
  []
@@ -365,14 +365,14 @@ Overfull \hbox (11.61832pt too wide) in paragraph at lines 404--405
 
 AED: lastpage setting LastPage
 [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 456.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 456.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 457.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 457.
  (CV.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 456.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 456.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 457.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 457.
 Package rerunfilecheck Info: File `CV.out' has not changed.
 (rerunfilecheck)             Checksum: CFD7A453D34F49151D148712A8A093E3;572.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 456.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 457.
  ) 
 Here is how much of TeX's memory you used:
  6054 strings out of 480756
@@ -381,7 +381,7 @@ Here is how much of TeX's memory you used:
  21974 multiletter control sequences out of 15000+200000
  536978 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,13n,70p,609b,310s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,14n,70p,609b,310s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\rcfos\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
 tcrm1095.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
@@ -389,9 +389,9 @@ Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on CV.pdf (3 pages, 109065 bytes).
+Output written on CV.pdf (3 pages, 109603 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
+ 123 PDF objects out of 1000 (max. 8388607)
  15 named destinations out of 1000 (max. 500000)
  89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
